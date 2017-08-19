@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tic Toe Game</title>
+	<link rel="stylesheet" type="text/css" href="game.css">
+	<script type="text/javascript" src="game.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#reset").click(function(){
+				$("#main").load('game.html');
+				
+			});
+		});
+	</script>
+</head>
+<body onload="startGame();">
+<div id="message">	</div>
+	<table cellspacing="20px" align="center">
+		<tr>
+			<td id="s1" class="square" onclick="nextMove(this);"></td>
+			<td id="s2" class="square" onclick="nextMove(this);"></td>
+			<td id="s3" class="square" onclick="nextMove(this);"></td>
+		</tr>
+			<tr>
+			<td id="s4" class="square" onclick="nextMove(this);"></td>
+			<td id="s5" class="square" onclick="nextMove(this);"></td>
+			<td id="s6" class="square" onclick="nextMove(this);"></td>		
+			</tr>
+			<tr>
+			<td id="s7" class="square" onclick="nextMove(this);"></td>
+			<td id="s8" class="square" onclick="nextMove(this);"></td>
+			<td id="s9" class="square" onclick="nextMove(this);"></td>		
+			</tr>
+	</table><br><br>
+	<button id="reset" type="submit" value="Reset">Play Again</button>
+
+</body>
+</html>
