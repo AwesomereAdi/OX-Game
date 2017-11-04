@@ -1,0 +1,64 @@
+html
+{
+  background: url("main_area.jpg")no-repeat center center fixed;
+  background-blend-mode: color-dodge;
+
+  
+}
+ul {
+    list-style-type: none;
+    padding: 0;
+    background-color: inherit;
+    position: relative;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    font-weight: bold;
+}
+
+li {
+    float: left;
+    color: white;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: blue;
+}
+
+.active {
+    background-color: darkblue;
+}
+
+a:hover:not(.active) 
+{
+  background-color:#17044f;
+}
+
+.active 
+{
+  background-color:inherit;
+}
+
+#main_area
+{
+  text-align: center;
+  position: absolute;
+  text-align:left; 
+  vertical-align: center;
+  background:none; 
+  height: 100%;
+  background: inherit;
+  color: white;
+  margin-left: 10px;
+
+}
+
